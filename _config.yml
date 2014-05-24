@@ -1,3 +1,10 @@
-name: ElegantDevs
-markdown: redcarpet
-pygments: true
+# Site settings
+title: ElegantDevs
+email: info@elegantdevs.com
+description: "ElegantDevs - Code, Music, Life"
+baseurl: ""
+url: "http://elegantdevs.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
