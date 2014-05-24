@@ -324,7 +324,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eee
+    border-top: 1px solid #030303
 }
 
 .sr-only {
@@ -7944,7 +7944,7 @@ a.list-group-item-danger:hover {
 }
 
 .panel-title {
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 400;
     color: #434a54
 }
@@ -8576,7 +8576,6 @@ body {
 .docs-header {
     padding-top: 50px;
     border-top: 1px solid #50c1e9;
-    background: url(../img/wild_flowers.png) repeat 0 0
 }
 
 .docs-header.header--noBackground {
