@@ -5,6 +5,7 @@ description: "ElegantDevs - Code, Music, Life"
 baseurl: ""
 url: "http://elegantdevs.com"
 
+
 # Build settings
 markdown: kramdown
 permalink: pretty
