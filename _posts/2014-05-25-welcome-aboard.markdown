@@ -12,7 +12,7 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 private static String reStructure(String[] s, int i){
     string toReturn = "";
     for(; i < s.length - 1; i++)

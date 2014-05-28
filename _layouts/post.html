@@ -6,19 +6,26 @@ layout: default
 	<div class="col-md-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h1 class="panel-title"><b>{{ page.title }}</b></h1>
-				<div class="post">
-				  <header class="post-header">
-				    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-				  </header>
-				  <hr class="dashed">
-				  <article class="post-content">
-				  {{ content }}
-				  </article>
+				<div class="panel-title">
+					<header class="post-header">
+						<table width="100%"> 
+							<tr> 
+								<td align="left"><b>{{ page.title }}</b></td> 
+								<td align="right"><font size="3">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</font></td> 
+							</tr> 
+						</table> 
+					</header>
 				</div>
+			</div>
+			<div class="panel-body">
+				<div class="panel-body">
+					  <article class="post-content">
+					  {{ content }}
+					  </article>
+				</div>
+				<hr class="dashed">
+				<center>{% include disqus.html %}</center>
 			</div>
 		</div>
 	</div>
-	{% include disqus.html %}
 </div>
-
