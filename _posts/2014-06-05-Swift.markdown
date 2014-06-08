@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Swift"
+date:   2014-06-05 12:35:13
+categories: swift, new programming language, apple
+---
+
+Just wow. 
