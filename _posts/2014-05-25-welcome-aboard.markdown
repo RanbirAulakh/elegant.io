@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome Aboard!"
 date:   2014-05-24 12:35:13
+permalink: welcome.html
 categories: welcome
 ---
 
