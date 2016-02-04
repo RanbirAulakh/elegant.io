@@ -1,63 +1,58 @@
 ---
 layout: default
 ---
+<center>
+<div class="blog-header">
+    <h1 class="blog-title">Welcome to ElegantDevs!</h1>
+    <p class="lead blog-description">Blog about Music, Code, and Life</p>
+</div>
+</center>
 
+<hr>
 
-<div id="main">
-    <div class="header">
-        <h1>Welcome to ElegantDevs!</h1>
-        <h2>Blog about Music, Code, and Life</h2>
-    </div>
+<h2>Blog Posts</h2>
+<ul class="listfont">
+    {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
 
-    <div class="content">
-        <h2 class="content-subhead">Blog Posts</h2>
-        <ul class="posts">
-            {% for post in site.posts %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
+<hr>
 
-        <h2 class="content-subhead">About Us</h2>
+<div class="sidebar-module sidebar-module-inset">
+    <h4>About Us</h4>
+    <p>
+        Hi, our names are Joseph Bartelmo and Ranbir Aulakh. We have been programming for many years and have known each other for about 3 years as of 2014. The first website we met on (which is now extinct) was called <em>undergroundcoding.com</em>. Joe was a manager on this site, and we eventually met each other. At this time Ranbir was working on a site called <em>zChrome.com</em> which was an amateur modding website for NBA based games. We morphed the site into <em>Xbox360Content.com</em>, which was a bustling community in its time due to program we developed, <em>Revelation</em>. As the time goes on, we both eventually gave up due to inactivity on the site, and we decided to form this blog since we are always posting things on the internet.
+    </p>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-md-6">
+        <center><img class="img-thumbnail" width="180px" height="180px" src="/images/joe.jpg"></center>
+        <p></p>
         <p>
-            Hi, our names are Joseph Bartelmo and Ranbir Aulakh. We have been programming for many years and have known each other for about 4 years as of 2014. The first website we met on (which is now extinct) was called ‘undergroundcoding.com’. Joe was a manager on this site, and we eventually met each other. At this time Ranbir was working on a site called ‘zChrome.com’ which was an amateur modding website for NBA based games. We morphed the site into ‘Xbox360Content.com’, which was a bustling community in its time. We both eventually gave up due to inactivity on the site, and we decided to form this blog since we are always posting things on the internet.
+            <p><b>Joseph Bartelmo; </b>2nd Year Student at <a href="http://rit.edu"> Rochester Institute of Technology</a> majoring in <em>Computer Science</em>.</p> 
+            <p><b>Programming Languages</b></p>
+            <ul>
+                <li>C#, Java, PHP, HTML, CSS, MYSQL</li>
+            </ul>
+            <p>Plays classical guitar, composes music and arranges music from movies and video games, 3d designer, builds computers, interested in calculus and complex math. Favorite Videogame: Mass Effect Series or the Elder Scrolls Series.</p>
+            <a href="https://www.linkedin.com/in/joseph-bartelmo-949547a7"> Joseph Bartelmo's Linkedin </a> | <a href="#"> Joseph Bartelmo's Resume </a>
         </p>
-        
-        <div class="pure-g">
-            <div class="pure-u-11-24">
-                <center><img class="pure-img" width="180px" height="180px" src="/images/joe.jpg"></center>
-            </div>
-            <div class="pure-u-1-24">
-            </div>
-            <div class="pure-u-11-24">
-                <center><img class="pure-img" width="180px" height="180px" src="/images/ranbir.jpg"></center>   
-            </div>
-
-            <div class="pure-u-11-24">
-                <div class="l-box">
-                    <center><h3>Joe Bartelmo</h3></center>
-                    <p>
-                        1st Year Student at <a href="http://rit.edu"> Rochester Institute of Technology.</a> Programs in C#, Java, PHP, HTML, CSS, MYSQL. Plays classical guitar, composes music and arranges music from movies and video games, 3d designer, builds computers, interested in calculus and complex math. Favorite Videogame: Mass Effect Series or the Elder Scrolls Series.
-                    </p>
-                </div>
-            </div>
-            <div class="pure-u-1-24">
-                <div class="l-box">
-                    <center><h3></h3></center>
-                    <p>
-                    </p>
-                </div>
-            </div>
-            <div class="pure-u-11-24">
-                <div class="l-box">
-                    <center><h3>Ranbir Aulakh</h3></center>
-                    <p>
-                        2nd Year Student at <a href="http://rit.edu"> Rochester Institute of Technology.</a> Programs in Objective-C. Java, and Python. 3D Modeling in 3Ds Max. Plays basketball. Interested in math, build computers, watching movies, playing video games. Favorite Videogame: NBA Series and Call of Duty Series.
-                    </p>
-                </div>
-            </div>
-        </div>
-        You can find our resume below!
-        <p><b><a href="/">Joe Bartelmo's Resume</a> </b></p>
-        <p><b><a href="/files/RanbirResume.pdf">Ranbir Aulakh's Resume</a> </b></p>
+    </div>
+    <div class="col-md-6">
+        <center><img class="img-thumbnail" width="180px" height="180px" src="/images/ranbir.jpg"></center>
+        <p></p>
+        <p>
+            <p><b>Ranbir Aulakh; </b>3rd Year Student at <a href="http://rit.edu"> Rochester Institute of Technology</a> majoring in <em>Computer Science</em>.</p>
+            <p><b>Programming Languages</b></p>
+            <ul>
+                <li>Python, Java, HTML/CSS, SQL, and C#</li>
+            </ul>
+            <p>Besides programming, I enjoy playing basketball, working out, and playing video games.</p>
+            <a href="https://www.linkedin.com/in/ranbiraulakh"> Ranbir Aulakh's Linkedin </a> | <a href="/ranbir_resume.pdf"> Ranbir Aulakh's Resume </a>
+        </p>
     </div>
 </div>

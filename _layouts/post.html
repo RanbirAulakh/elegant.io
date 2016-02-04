@@ -1,18 +1,15 @@
 ---
 layout: default
 ---
-<div id="main">
-    <div class="header">
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h2>
-    </div>
 
-    <div class="content">
-        <p>
-            <article class="post-content">
-                {{ content }}
-            </article>    
-        </p>
+<div class="blog-post">
+     <center><h2 class="blog-post-title">{{ page.title }}</h2>
+     <p class="blog-post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a href="#">{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</a></p></center>
+     
+     <div class="container">
+     <p>{{ content }}</p>
+        <hr>
         <center>{% include disqus.html %}</center>
-    </div>
+     </div>
 </div>
+
