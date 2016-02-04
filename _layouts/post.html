@@ -3,13 +3,17 @@ layout: default
 ---
 
 <div class="blog-post">
-     <center><h2 class="blog-post-title">{{ page.title }}</h2>
-     <p class="blog-post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a href="#">{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</a></p></center>
+     <div style="text-align:center">
+     	<h2 class="blog-post-title">{{ page.title }}</h2>
+     	<p class="blog-post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a href="#">{{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</a></p>
+     </div>
      
      <div class="container">
      <p>{{ content }}</p>
         <hr>
-        <center>{% include disqus.html %}</center>
+        <div style="text-align:center">
+        	{% include disqus.html %}
+        </div>
      </div>
 </div>
 
